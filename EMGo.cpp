@@ -416,6 +416,13 @@ char slct [5];
 //end
 //start of game
 
+void h2P(){
+	printf ("\n HOW TO PLAY\n");
+	printf ("=======================\n");
+	printf("\n1. Game Mechanics");
+	printf("\n2. Difficulties & Operators");
+}
+
 void gameScreen (){
 	system ("cls");
 	fileCopyr();
@@ -940,4 +947,5 @@ int main(){
 preEntryMenu();
 	return 0;
 }
+
 
