@@ -172,8 +172,9 @@ void Register () {
     char userN[100];
     char userP[100];
     long hashedP;
-    printf ("Insert your username >> ");
+    printf ("Insert your username (\\\0 to return) >> ");
     scanf ("%[^\n]",userN);getchar();
+	if (stcmpr (userN,"\0") == 0)return;
     do {
     printf ("Insert your password (minimal 8 charcters) >> ");
     scanf ("%s",userP);getchar();
@@ -1056,3 +1057,4 @@ preEntryMenu();
 
 
 // catatan: buat return pas di register, buat untuk detect kalo ada nama sama ga boleh reg, buat bisa return pas mau maen (keknya harus ganti sistem gamescree kan tadinya milih difficulty didalem, biar bisa back taro luar)
+
