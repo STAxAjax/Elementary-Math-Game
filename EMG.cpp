@@ -750,7 +750,7 @@ void gameScreen (){
 			timeStart=timeNow;
 			printf ("%lld\n",timer);
 			if (timer<1){		
-				printf ("times up boy time to die\n");
+				//printf ("times up boy time to die\n");
 				if (score>player.score){
 					printf ("New Record of %d from %d\n", score, player.score);
 					filePaster(score);
@@ -1273,4 +1273,5 @@ preEntryMenu();
 
 
 // catatan: buat bisa return pas mau maen (keknya harus ganti sistem gamescree kan tadinya milih difficulty didalem, biar bisa back taro luar)
+
 
